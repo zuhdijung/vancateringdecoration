@@ -6,8 +6,35 @@
     <link href="https://fonts.googleapis.com/css?family=Vollkorn|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="default.css">
     <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
 	<div class="vcd-topbar">
 		<div class="container">
 			<div class="col-md-3">
@@ -24,8 +51,8 @@
 					<h1><b>VAN</b> Catering <b>&</b> Decoration</h1>
 				</div>
 				<div class="col-md-8 col-xs-12 col-sm-12">
-					<nav class="navbar navbar-default">
-						<div class="navbar-header">
+					<nav class="navbar navbar-default ">
+						<div class="nav menu sf-menu responsive-menu superfish sf-js-enabled">
 					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vcd-collapse-nav" aria-expanded="false">
 					        <span class="sr-only">Toggle navigation</span>
 					        <span class="icon-bar"></span>
@@ -36,11 +63,11 @@
 						<div class="collapse navbar-collapse" id="vcd-collapse-nav">
 							<ul class="nav navbar-nav">
 						        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-						        <li><a href="#">About</a></li>
-						        <li><a href="#">Catering</a></li>
-						        <li><a href="#">Decoration</a></li>
-						        <li><a href="#">Contact</a></li>
-						        <li><a href="#">Gallery</a></li>
+						        <li><a href="#about">About</a></li>
+						        <li><a href="#package">Catering</a></li>
+						        <li><a href="#decoration">Decoration</a></li>
+						        <li><a href="#gallery">Gallery</a></li>
+						        <li><a href="#contact">Contact Us</a></li>
 						        <!-- <li class="dropdown">
 						          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 						          <ul class="dropdown-menu">
@@ -59,6 +86,7 @@
 				</div>
 			</div>
 	</div>
+</nav>
 	<div class="vcd-carousel">
 		<!-- Carousel
 	    ================================================== -->
@@ -111,6 +139,7 @@
 	      </a>
 	    </div><!-- /.carousel -->
 	</div>
+<section id="about">
 	<div class="vcd-about">
 		<div class="container">
 			<div class="col-sm-6 col-md-6 col-xs-12 text-center">
@@ -132,11 +161,239 @@
 			With <b>Special</b> Food
 		</div>
 	</div>
+</section>
 	<div class="vcd-package">
+		<section id="package">
 		<div class="container">
-			<h2>Catering <b>Package</b></h2>
+			<h2>Catering <b>Package</b></h2><br/>
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<div id="vcd-box">
+						<img src="images/wedding6.jpg" alt=Img class="img-responsive"></img>
+					</div>
+					<div class="price-list text-center">
+						<h2><c>Paket Tata Rias</c></h2>
+					
+					<div class="list-name text-center">
+						<table class="table table-striped">
+						<tbody>
+							<tr><td>Rias Pengantin 1 Pasang (Akad & Resepsi Di Gedung)</td></tr>
+							<tr><td>Rias Orang Tua 2 Orang</td></tr>
+							<tr><td>Busana Lengkap & Accesoris 	</td></tr>	
+						</tbody>
+						</table>
+					</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<div id="vcd-box">
+						<img src="images/wedding6.jpg" alt=Img class="img-responsive"></img>
+					</div>
+					<div class="price-list text-center">
+						<h2><c>Paket Tata Rias</c></h2>
+					
+					<div class="list-name text-center">
+						<table class="table table-striped">
+						<tbody>
+							<tr><td>Rias Pengantin 1 Pasang (Akad & Resepsi Di Gedung)</td></tr>
+							<tr><td>Rias Orang Tua 2 Orang</td></tr>
+							<tr><td>Busana Lengkap & Accesoris </td></tr>	
+						</tbody>
+						</table>
+					</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<div id="vcd-box">
+						<img src="images/wedding6.jpg" alt=Img class="img-responsive"></img>
+					</div>
+					<div class="price-list text-center">
+						<h2><c>Paket Tata Rias</c></h2>
+					
+					<div class="list-name text-center">
+						<table class="table table-striped">
+						<tbody>
+							<tr><td>Rias Pengantin 1 Pasang (Akad & Resepsi Di Gedung)</td></tr>
+							<tr><td>Rias Orang Tua 2 Orang</td></tr>
+							<tr><td>Busana Lengkap & Accesoris </td></tr>	
+						</tbody>
+						</table>
+					</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<div id="vcd-box">
+						<img src="images/wedding6.jpg" alt=Img class="img-responsive"></img>
+					</div>
+					<div class="price-list text-center">
+						<h2><c>Paket Tata Rias</c></h2>
+					
+					<div class="list-name text-center">
+						<table class="table table-striped">
+						<tbody>
+							<tr><td>Rias Pengantin 1 Pasang (Akad & Resepsi Di Gedung)</td></tr>
+							<tr><td>Rias Orang Tua 2 Orang</td></tr>
+							<tr><td>Busana Lengkap & Accesoris </td></tr>	
+						</tbody>
+						</table>
+					</div>
+					</div>
+				</div>
+			</div> <!-- end of row -->
+<section id="decoration">
+			<div><br/><br/>
+				<h2>Decoration <b>Package</b></h2><br/><br/>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<div id="vcd-box">
+						<img src="images/dekor1.jpg" alt=Img class="img-responsive"></img>
+					</div>
+					<div class="price-list text-center">
+						<h2><c>Paket Tata Rias</c></h2>
+					
+					<div class="list-name text-center">
+						<table class="table table-striped">
+						<tbody>
+							<tr><td>Rias Pengantin 1 Pasang (Akad & Resepsi Di Gedung)</td></tr>
+							<tr><td>Rias Orang Tua 2 Orang</td></tr>
+							<tr><td>Busana Lengkap & Accesoris 	</td></tr>	
+						</tbody>
+						</table>
+					</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<div id="vcd-box">
+						<img src="images/dekor2.jpg" alt=Img class="img-responsive"></img>
+					</div>
+					<div class="price-list text-center">
+						<h2><c>Paket Tata Rias</c></h2>
+					
+					<div class="list-name text-center">
+						<table class="table table-striped">
+						<tbody>
+							<tr><td>Rias Pengantin 1 Pasang (Akad & Resepsi Di Gedung)</td></tr>
+							<tr><td>Rias Orang Tua 2 Orang</td></tr>
+							<tr><td>Busana Lengkap & Accesoris </td></tr>	
+						</tbody>
+						</table>
+					</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<div id="vcd-box">
+						<img src="images/dekor1.jpg" alt=Img class="img-responsive"></img>
+					</div>
+					<div class="price-list text-center">
+						<h2><c>Paket Tata Rias</c></h2>
+					
+					<div class="list-name text-center">
+						<table class="table table-striped">
+						<tbody>
+							<tr><td>Rias Pengantin 1 Pasang (Akad & Resepsi Di Gedung)</td></tr>
+							<tr><td>Rias Orang Tua 2 Orang</td></tr>
+							<tr><td>Busana Lengkap & Accesoris </td></tr>	
+						</tbody>
+						</table>
+					</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<div id="vcd-box">
+						<img src="images/dekor2.jpg" alt=Img class="img-responsive"></img>
+					</div>
+					<div class="price-list text-center">
+						<h2><c>Paket Tata Rias</c></h2>
+					
+					<div class="list-name text-center">
+						<table class="table table-striped">
+						<tbody>
+							<tr><td>Rias Pengantin 1 Pasang (Akad & Resepsi Di Gedung)</td></tr>
+							<tr><td>Rias Orang Tua 2 Orang</td></tr>
+							<tr><td>Busana Lengkap & Accesoris </td></tr>	
+						</tbody>
+						</table>
+					</div>
+					</div>
+				</div>
+			</div> <!-- end of row-->
+		</div> <!-- end of container -->	
+		</section>
+	</div> <!-- end of vcd-pckage -->
+	<div class="vcd-banner">
+		<img src="images/wedding7.jpg" alt="Img" class="img-responsive">
+		<div class="overlay-image"></div>
+		<div class="play-button-container">
+			Decorate Your <b>Wedding</b> Day <br />
+			Decorate Your <b>Future</b> Day
+		</div>
+	</div>	
+
+<div class="vcd-gallery">
+	<div class="container text-center">
+			<div><br/><br/>
+				<h2>All <b>Gallery</b></h2><br/><br/>
+			</div>
+		<div class="row">
+			<div class="col-sm-4 col-md-3 col-xs-6 text-center">
+				<img src="images/gallery1.jpg" alt=Img class="img-responsive"></img>
+			</div>
+			<div class="col-sm-4 col-md-3 col-xs-6 text-center">
+				<img src="images/gallery2.jpg" alt=Img class="img-responsive"></img>
+			</div>
+			<div class="col-sm-4 col-md-3 col-xs-6 text-center">
+				<img src="images/gallery1.jpg" alt=Img class="img-responsive"></img>
+			</div>
+			<div class="col-sm-4 col-md-3 col-xs-6 text-center">
+				<img src="images/gallery2.jpg" alt=Img class="img-responsive"></img>
+			</div>
+		</div><br/><!-- end of row-->
+	</div><!-- end of container -->
+</div>
+
+	<div class="vcd-banner">
+		<img src="images/marriage.jpg" alt="Img" class="img-responsive">
+		<div class="overlay-image"></div>
+		<div class="play-button-container">
+			Good <b>Marriage</b> Comes From <br />
+			a Good <b>Wedding</b>
 		</div>
 	</div>
+	<div class="vcd-contact">
+		<div class="container">
+			<div class="col-sm-6 col-md-6 col-xs-12 text-center">
+				<div class="col-sm-6 col-md-6 col-xs-12" style="padding-left: 0px">
+			<p><input class="form-control" type="text" name="nama" placeholder="Nama"></p>
+				</div>
+				<div class="col-sm-6 col-md-6 col-xs-12" style="padding-right: 0px">
+			<p><input class="form-control" type="text" name="email" placeholder="Email"></p>
+				</div>
+			<p><input class="form-control" type="text" name="subject" placeholder="Subject"></p>
+			<p> <textarea class="form-control" rows="3" id="message" placeholder="Message"></textarea></p>
+			<a class="btn btn-sm vcd-btn-primary" href="#" role="button">Submit</a>
+			</div>
+			
+			<div class="col-sm-6 col-md-6 col-xs-12 text-center">
+			<div class="vcd-contact-us">
+				<h1>CONTACT <b>US</b></h1>
+			</div>
+			</div>
+		</div>
+	</div>
+
+<div id="vcd-bottom-footer">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 text-center">
+			<p>&copy; 2016 Van Catering Decoration All Rights Reserved</p>
+			<p>Developed By <a href="http://dzillaweb.com/">Dzilla Web</a></p>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+</div>
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
