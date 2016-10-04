@@ -62,7 +62,7 @@ $(document).ready(function(){
 					      </button>
 					    </div>
 						<div class="collapse navbar-collapse" id="vcd-collapse-nav">
-							<ul class="nav navbar-nav">
+							<ul id="vcd-navbar" class="nav navbar-nav">
 						        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
 						        <li><a href="#about">About</a></li>
 						        <li><a href="#package">Catering</a></li>
@@ -143,6 +143,7 @@ $(document).ready(function(){
 <section id="about">
 	<div class="vcd-about">
 		<div class="container">
+		<br/><br/>
 			<div class="col-sm-6 col-md-6 col-xs-12 text-center">
 				<h1>ABOUT <b>US</b></h1>
 			</div>
@@ -164,8 +165,9 @@ $(document).ready(function(){
 	</div>
 </section>
 	<div class="vcd-package">
-		<section id="package">
+
 		<div class="container">
+		<section id="package">
 			<h2>Catering <b>Package</b></h2><br/>
 			<div class="row">
 				<div class="col-md-3 col-sm-4 col-xs-6">
@@ -331,7 +333,7 @@ $(document).ready(function(){
 			Decorate Your <b>Future</b> Day
 		</div>
 	</div>	
-
+<section id="gallery">	
 <div class="vcd-gallery">
 	<div class="container text-center">
 			<div><br/><br/>
@@ -353,7 +355,7 @@ $(document).ready(function(){
 		</div><br/><!-- end of row-->
 	</div><!-- end of container -->
 </div>
-
+</section>
 	<div class="vcd-banner">
 		<img src="images/marriage.jpg" alt="Img" class="img-responsive">
 		<div class="overlay-image"></div>
@@ -362,18 +364,43 @@ $(document).ready(function(){
 			a Good <b>Wedding</b>
 		</div>
 	</div>
+<section id="contact">
 	<div class="vcd-contact">
 		<div class="container">
 			<div class="col-sm-6 col-md-6 col-xs-12 text-center">
-				<div class="col-sm-6 col-md-6 col-xs-12" style="padding-left: 0px">
-			<p><input class="form-control" type="text" name="nama" placeholder="Nama"></p>
+				<div class="col-xs-12">
+					<div class="col-sm-6 col-md-6 hidden-xs" style="padding-left: 0px">
+						<div class="form-group">
+							<input class="form-control" type="text" name="nama" placeholder="Nama">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 visible-xs" style="padding: 0px">
+						<div class="form-group">
+							<input class="form-control" type="text" name="nama" placeholder="Nama">
+						</div>
+					</div>				
+					<div class="col-sm-6 col-md-6 hidden-xs" style="padding-right: 0px">
+						<div class="form-group">
+							<input class="form-control" type="text" name="email" placeholder="Email">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 visible-xs" style="padding: 0px">
+						<div class="form-group">
+							<input class="form-control" type="text" name="email" placeholder="Email">
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-xs-12" style="padding-right: 0px">
-			<p><input class="form-control" type="text" name="email" placeholder="Email"></p>
+				<div class="col-xs-12">
+					<div class="form-group">
+						<input class="form-control" type="text" name="subject" placeholder="Subject">
+					</div>
 				</div>
-			<p><input class="form-control" type="text" name="subject" placeholder="Subject"></p>
-			<p> <textarea class="form-control" rows="3" id="message" placeholder="Message"></textarea></p>
-			<a class="btn btn-sm vcd-btn-primary" href="#" role="button">Submit</a>
+				<div class="col-xs-12">
+					<div class="form-group">
+						<textarea class="form-control" rows="3" id="message" placeholder="Message"></textarea>
+					</div>
+				</div>
+				<button class="btn btn-sm vcd-btn-primary" type="submit" role="button">Submit</button>
 			</div>
 			
 			<div class="col-sm-6 col-md-6 col-xs-12 text-center">
@@ -383,7 +410,7 @@ $(document).ready(function(){
 			</div>
 		</div>
 	</div>
-
+</section>
 <div id="vcd-bottom-footer">
 	<div class="row">
 		<div class="col-md-4"></div>
